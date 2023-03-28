@@ -1,6 +1,6 @@
 {
   "extends": "@ignite-ui/eslint-config",
   "rules": {
-    "semi": [2, "always"]
+    "semi": [2, "never"]
   }
 }
