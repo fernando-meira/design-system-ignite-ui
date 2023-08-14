@@ -19,7 +19,7 @@
 }
 
 .tokens-grid tbody tr:nth-child(even) td {
-  backgroud: #444;
+  background: #444444;
 }
 
 .name {
