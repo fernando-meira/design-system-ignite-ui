@@ -6,13 +6,77 @@ import * as react_jsx_runtime from 'react/jsx-runtime';
 import * as Avatar$1 from '@radix-ui/react-avatar';
 
 declare const Box: _stitches_react_types_styled_component.StyledComponent<"div", {}, {}, _stitches_react_types_css_util.CSS<{}, {
-    space: unknown;
-    fonts: unknown;
-    radii: unknown;
-    colors: unknown;
-    fontSizes: unknown;
-    fontWeights: unknown;
-    lineHeights: unknown;
+    space: {
+        1: string;
+        2: string;
+        3: string;
+        4: string;
+        5: string;
+        6: string;
+        7: string;
+        8: string;
+        10: string;
+        12: string;
+        16: string;
+        20: string;
+        40: string;
+        64: string;
+        80: string;
+    };
+    fonts: {
+        default: string;
+        code: string;
+    };
+    radii: {
+        px: string;
+        xs: string;
+        sm: string;
+        md: string;
+        lg: string;
+        full: string;
+    };
+    colors: {
+        white: string;
+        black: string;
+        gray100: string;
+        gray200: string;
+        gray400: string;
+        gray500: string;
+        gray600: string;
+        gray700: string;
+        gray800: string;
+        gray900: string;
+        ignite300: string;
+        ignite500: string;
+        ignite700: string;
+        ignite900: string;
+    };
+    fontSizes: {
+        xxs: string;
+        xs: string;
+        sm: string;
+        md: string;
+        lg: string;
+        xl: string;
+        '2xl': string;
+        '4xl': string;
+        '5xl': string;
+        '6xl': string;
+        '7xl': string;
+        '8xl': string;
+        '9xl': string;
+    };
+    fontWeights: {
+        regular: string;
+        medium: string;
+        bold: string;
+    };
+    lineHeights: {
+        shorter: string;
+        short: string;
+        base: string;
+        tall: string;
+    };
 }, {
     width: "space";
     height: "space";
@@ -148,15 +212,79 @@ interface BoxProps extends ComponentProps<typeof Box> {
 }
 
 declare const Text: _stitches_react_types_styled_component.StyledComponent<"p", {
-    size?: "md" | "xxs" | "xs" | "sm" | "lg" | "xl" | "2xl" | "4xl" | "5xl" | "6xl" | "7xl" | "8xl" | "9xl" | undefined;
+    size?: "xxs" | "xs" | "sm" | "md" | "lg" | "xl" | "2xl" | "4xl" | "5xl" | "6xl" | "7xl" | "8xl" | "9xl" | undefined;
 }, {}, _stitches_react_types_css_util.CSS<{}, {
-    space: unknown;
-    fonts: unknown;
-    radii: unknown;
-    colors: unknown;
-    fontSizes: unknown;
-    fontWeights: unknown;
-    lineHeights: unknown;
+    space: {
+        1: string;
+        2: string;
+        3: string;
+        4: string;
+        5: string;
+        6: string;
+        7: string;
+        8: string;
+        10: string;
+        12: string;
+        16: string;
+        20: string;
+        40: string;
+        64: string;
+        80: string;
+    };
+    fonts: {
+        default: string;
+        code: string;
+    };
+    radii: {
+        px: string;
+        xs: string;
+        sm: string;
+        md: string;
+        lg: string;
+        full: string;
+    };
+    colors: {
+        white: string;
+        black: string;
+        gray100: string;
+        gray200: string;
+        gray400: string;
+        gray500: string;
+        gray600: string;
+        gray700: string;
+        gray800: string;
+        gray900: string;
+        ignite300: string;
+        ignite500: string;
+        ignite700: string;
+        ignite900: string;
+    };
+    fontSizes: {
+        xxs: string;
+        xs: string;
+        sm: string;
+        md: string;
+        lg: string;
+        xl: string;
+        '2xl': string;
+        '4xl': string;
+        '5xl': string;
+        '6xl': string;
+        '7xl': string;
+        '8xl': string;
+        '9xl': string;
+    };
+    fontWeights: {
+        regular: string;
+        medium: string;
+        bold: string;
+    };
+    lineHeights: {
+        shorter: string;
+        short: string;
+        base: string;
+        tall: string;
+    };
 }, {
     width: "space";
     height: "space";
@@ -497,16 +625,88 @@ declare const AvatarImage: _stitches_react_types_styled_component.StyledComponen
 type AvatarProps = ComponentProps<typeof AvatarImage>;
 declare function Avatar(props: AvatarProps): react_jsx_runtime.JSX.Element;
 
+declare const Button: _stitches_react_types_styled_component.StyledComponent<"button", {
+    variant?: "primary" | "secondary" | "tertiary" | undefined;
+    size?: "md" | "sm" | undefined;
+}, {}, _stitches_react_types_css_util.CSS<{}, {}, {}, {}>>;
+interface ButtonProps extends ComponentProps<typeof Button> {
+    as?: ElementType;
+}
+
 declare const Heading: _stitches_react_types_styled_component.StyledComponent<"h2", {
-    size?: "md" | "sm" | "lg" | "2xl" | "4xl" | "5xl" | "6xl" | "3xl" | undefined;
+    size?: "sm" | "md" | "lg" | "2xl" | "4xl" | "5xl" | "6xl" | "3xl" | undefined;
 }, {}, _stitches_react_types_css_util.CSS<{}, {
-    space: unknown;
-    fonts: unknown;
-    radii: unknown;
-    colors: unknown;
-    fontSizes: unknown;
-    fontWeights: unknown;
-    lineHeights: unknown;
+    space: {
+        1: string;
+        2: string;
+        3: string;
+        4: string;
+        5: string;
+        6: string;
+        7: string;
+        8: string;
+        10: string;
+        12: string;
+        16: string;
+        20: string;
+        40: string;
+        64: string;
+        80: string;
+    };
+    fonts: {
+        default: string;
+        code: string;
+    };
+    radii: {
+        px: string;
+        xs: string;
+        sm: string;
+        md: string;
+        lg: string;
+        full: string;
+    };
+    colors: {
+        white: string;
+        black: string;
+        gray100: string;
+        gray200: string;
+        gray400: string;
+        gray500: string;
+        gray600: string;
+        gray700: string;
+        gray800: string;
+        gray900: string;
+        ignite300: string;
+        ignite500: string;
+        ignite700: string;
+        ignite900: string;
+    };
+    fontSizes: {
+        xxs: string;
+        xs: string;
+        sm: string;
+        md: string;
+        lg: string;
+        xl: string;
+        '2xl': string;
+        '4xl': string;
+        '5xl': string;
+        '6xl': string;
+        '7xl': string;
+        '8xl': string;
+        '9xl': string;
+    };
+    fontWeights: {
+        regular: string;
+        medium: string;
+        bold: string;
+    };
+    lineHeights: {
+        shorter: string;
+        short: string;
+        base: string;
+        tall: string;
+    };
 }, {
     width: "space";
     height: "space";
@@ -641,4 +841,4 @@ interface HeadingProps extends ComponentProps<typeof Heading> {
     as?: ElementType;
 }
 
-export { Avatar, AvatarProps, Box, BoxProps, Heading, HeadingProps, Text, TextProps };
+export { Avatar, AvatarProps, Box, BoxProps, Button, ButtonProps, Heading, HeadingProps, Text, TextProps };
