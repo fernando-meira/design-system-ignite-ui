@@ -22,6 +22,18 @@ var __spreadValues = (a, b) => {
   return a;
 };
 var __spreadProps = (a, b) => __defProps(a, __getOwnPropDescs(b));
+var __objRest = (source, exclude) => {
+  var target = {};
+  for (var prop in source)
+    if (__hasOwnProp.call(source, prop) && exclude.indexOf(prop) < 0)
+      target[prop] = source[prop];
+  if (source != null && __getOwnPropSymbols)
+    for (var prop of __getOwnPropSymbols(source)) {
+      if (exclude.indexOf(prop) < 0 && __propIsEnum.call(source, prop))
+        target[prop] = source[prop];
+    }
+  return target;
+};
 var __export = (target, all) => {
   for (var name in all)
     __defProp(target, name, { get: all[name], enumerable: true });
@@ -51,7 +63,8 @@ __export(src_exports, {
   Box: () => Box,
   Button: () => Button,
   Heading: () => Heading,
-  Text: () => Text
+  Text: () => Text,
+  TextInput: () => TextInput
 });
 module.exports = __toCommonJS(src_exports);
 
@@ -329,11 +342,64 @@ var Heading = styled("h2", {
     size: "md"
   }
 });
+
+// src/components/TextInput/styles.ts
+var TextInputContainer = styled("div", {
+  padding: "$3 $4",
+  boxSizing: "border-box",
+  border: "2px solid $gray900",
+  display: "flex",
+  alignItems: "baseline",
+  borderRadius: "$sm",
+  backgroundColor: "$gray900",
+  "&:has(input:focus)": {
+    borderColor: "$ignite300"
+  },
+  "&:has(input:disabled)": {
+    opacity: 0.5,
+    cursor: "not-allowed"
+  }
+});
+var Prefix = styled("span", {
+  fontSize: "$sm",
+  color: "$gray400",
+  fontFamily: "$default",
+  fontWeight: "$regular"
+});
+var Input = styled("input", {
+  border: 0,
+  width: "100%",
+  fontSize: "$sm",
+  color: "$white",
+  fontFamily: "$default",
+  fontWeight: "$regular",
+  background: "transparent",
+  "&:focus": {
+    outline: 0
+  },
+  "&:disabled": {
+    cursor: "not-allowed"
+  },
+  "&:placeholder": {
+    color: "$gray400"
+  }
+});
+
+// src/components/TextInput/index.tsx
+var import_jsx_runtime2 = require("react/jsx-runtime");
+function TextInput(_a) {
+  var _b = _a, { prefix } = _b, rest = __objRest(_b, ["prefix"]);
+  return /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)(TextInputContainer, { children: [
+    !!prefix && /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(Prefix, { children: prefix }),
+    /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(Input, __spreadValues({}, rest))
+  ] });
+}
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
   Avatar,
   Box,
   Button,
   Heading,
-  Text
+  Text,
+  TextInput
 });
